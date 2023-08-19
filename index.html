@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saludar Botón</title>
+    <style>
+        .boton-container {
+            padding: 5px;
+            background-color: green;
+            display: inline-block;
+            cursor: pointer; 
+        }
+    </style>
+    <title>Div con Botón</title>
 </head>
 <body>
-    <button id="saludarBtn" onclick="alert('Hola!')">Saludar</button>
+    <div class="boton-container" id="miDiv">
+        <button id="saludarBtn">Saludar</button>
+    </div>
 
-    <script>
-        const saludarBtn = document.getElementById("saludarBtn");
-        saludarBtn.addEventListener("click", () => {
-            alert("¡Hola! ¡Bienvenido!");
-        });
-    </script>
+    <script src="eventos.js"></script>
 </body>
 </html>
 
